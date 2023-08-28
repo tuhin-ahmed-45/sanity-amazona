@@ -5,18 +5,16 @@ import { urlForThumbnail } from "@/utils/image";
 import { Store } from "@/utils/store";
 import { Alert, CircularProgress, Grid } from "@mui/material";
 import axios from "axios";
-import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useSnackbar } from "notistack";
 import { useContext, useEffect, useState } from "react";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const {
     state: { cart },
     dispatch,
   } = useContext(Store);
-  const router = useRouter()
+  const router = useRouter();
   const { enqueueSnackbar } = useSnackbar();
   const [state, setState] = useState({
     products: [],

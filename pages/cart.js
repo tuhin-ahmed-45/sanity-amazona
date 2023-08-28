@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import { Store } from "@/utils/store";
 import {
   Box,
@@ -23,7 +24,7 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { useSnackbar } from "notistack";
 import { useContext } from "react";
-import Layout from "../components/Layout";
+
 
 function CartScreen() {
   const router = useRouter()
